@@ -7,6 +7,8 @@ public class Cat {
     private final int age;
     private final boolean isFemale;
 
+    private int counter = 0;
+
 
     public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
@@ -25,10 +27,19 @@ public class Cat {
 
     public String getAge() {
         if (isFemale) {
-            return "This is an inappropriate question!";
+            return checkCompliance();
         } else {
             return String.valueOf(age);
         }
+    }
+    private String checkCompliance() {
+        counter++;
+        return switch (counter){
+            case 1 -> "This is an inappropriate question!";
+            case 2 -> "i#ve told you once!";
+            case 3 -> "Talk to the hand!";
+            default -> "1#!?&&%";
+        };
     }
 
 

@@ -10,7 +10,10 @@ public class App {
         output(cat.getStringAttributes("#color"));
 
         output(cat.getAge());
-
+        output(cat.getAge());
+        output(cat.getAge());
+        output(cat.getAge());
+        output(cat.getAge());
 
         output("-------------------------");
 
@@ -19,7 +22,7 @@ public class App {
         output(cat2.getStringAttributes("#name"));
         output(cat2.getStringAttributes("#color"));
 
-        output(cat2.getAge());
+
 
     }
 
